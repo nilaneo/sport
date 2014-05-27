@@ -15,6 +15,13 @@
         <![endif]-->
     </head>
     <body>
+        <div class="socials-fixed">
+            <ul>
+                <li><a href="#0" class="icon icon-fb"></a></li>
+                <li><a href="#0" class="icon icon-tw"></a></li>
+                <li><a href="#0" class="icon icon-insta"></a></li>
+            </ul>
+        </div>
         <div class="page-wrapper">
             <header class="header">
                 <div class="container clearfix">
@@ -44,12 +51,12 @@
                 <div class="slider">
                     <div class="container">
                         <div class="slider-info">
-                            <h1 class="title title-giant">Пять уроков тура</h1>
+                            <h1 class="title title-giant text-shadowed">Пять уроков тура</h1>
                             <h3 class="title title-bg">Ключевые моменты чемпионата</h3>
-                            <p>
+                            <p class="text-shadowed">
                                 В любой другой сезон Горняки такой чемпионат Украины выиграли бы совершенно без проблем.  Динамо весь год испытывает игровые трудности. Металлист перенес огромные потрясения в феврале. Предпосылок лучше – просто не сыскать.
                             </p>
-                            <a href="#0" class="btn btn-pink">Читать далее <ins class="icon icon-arrow-right"></ins></a>
+                            <a href="#0" class="btn btn-pink btn-wide">Читать далее <ins class="icon icon-arrow-right"></ins></a>
                         </div><!-- end of slider-info -->
                     </div><!-- end of container -->
                 </div><!-- end of slider -->
@@ -57,9 +64,9 @@
                     <div class="container">
                         <div class="push-up">
                             <div class="cols clearfix">
-                                <div class="col-1">
+                                <div class="col-1 block-white block-shadowed no-mg">
                                     <h3 class="title-col">Прогнозы</h3>
-                                    <div class="news">
+                                    <div class="col-content">
                                         <div class="media">
                                             <img src="img/.jpg" alt="">
                                             <div class="bd">
@@ -79,7 +86,9 @@
                                                 MU (-1.5) в первом тайме
                                             </div>
                                         </div>
-                                        <div class="news">
+                                    </div>
+                                    <div class="news">
+                                        <div class="col-content">
                                             <div class="media">
                                                 <img src="img/man.jpg" alt="" class="round">
                                                 <div class="bd">
@@ -87,7 +96,7 @@
                                                 </div>
                                             </div>
                                         </div>
-                                    </div><!-- end of news -->
+                                    </div>                                        
                                     <hr>
                                     <div class="news">
                                         <div class="media">
@@ -119,23 +128,29 @@
                                         </div>
                                     </div><!-- end of news -->
                                     <a href="#0" class="lnk-primary right">
-                                        смотреть дальшеяя
+                                        смотреть дальше
                                     </a>
                                 </div><!-- end of col-1 -->
-                                <div class="col-1">
+                                <div class="col-1 block-white block-shadowed">
                                     <h3 class="title-col">Прогноз по продвижению коефициентов</h3>
-                                    <p>
-                                        Статистическая информация с биржи ставок позволяет вам принимать правильные решения о дальнейших действиях и ставках.
-                                        <img src="img/banner-diag.jpg" alt="">
-                                        <a href="#0" class="btn btn-pink centered">Сменить подписку</a>
-                                    </p>
+                                    <div class="col-content">
+                                        <p class="mb-15">
+                                            Статистическая информация с биржи ставок позволяет вам принимать правильные решения о дальнейших действиях и ставках.
+                                        </p>
+                                        <img src="img/banner-diag.jpg" alt="" class="mb-20">
+                                        <div class="centered">
+                                            <a href="#0" class="btn btn-pink">Сменить подписку</a>
+                                        </div>
+                                    </div>
                                 </div><!-- end of col-1 -->
-                                <div class="col-1">
+                                <div class="col-1 block-white block-shadowed">
                                     <h3 class="title-col">Прогнозы LIVE</h3>
-                                    <p>
-                                        Прогнозы Live позволяют вам следить за событиями с комментариями от лучших комментаторов!
+                                    <div class="col-content">
+                                        <p class="mb-25">
+                                            Прогнозы Live позволяют вам следить за событиями с комментариями от лучших комментаторов!
+                                        </p>
                                         <img src="img/soon.jpg" alt="">
-                                    </p>
+                                    </div>
                                 </div><!-- end of col-1 -->
                             </div><!-- end of cols clearfix -->
                             <h2 class="title-dark-bg">
@@ -172,18 +187,22 @@
             </div><!-- end of main -->
         </div><!-- end of page-wrapper -->
         <footer class="footer">
-            <nav class="nav-footer">
-                <ul>
-                    <li><a href="#0">Работа с нами</a></li>
-                    <li><a href="#0">Пользовательское соглашение</a></li>
-                    <li><a href="#0">FAQ</a></li>
-                    <li><a href="#0">Конактные данные</a></li>
-                </ul>
-            </nav>
-            <ul class="copyright right">
-                <li><a href="#0">© 2014 KROMBET</a></li>
-                <li><a href="#0">Разработка сайта<img src="img/fresh-design.png" alt=""></a></li>
-            </ul>
+            <div class="container clearfix">
+                <nav class="nav nav-left">
+                    <ul>
+                        <li><a href="#0">Работа с нами</a></li>
+                        <li><a href="#0">Пользовательское соглашение</a></li>
+                        <li><a href="#0">FAQ</a></li>
+                        <li><a href="#0">Конактные данные</a></li>
+                    </ul>
+                </nav>
+                <nav class="nav nav-bright nav-right">
+                    <ul>
+                        <li><a href="#0">Разработка сайта<img src="img/fresh-design.png" alt=""></a></li>
+                        <li><a href="#0">© 2014 KROMBET</a></li>
+                    </ul>
+                </nav>                
+            </div>
         </footer>
 
         <script src="js/vendor/jquery-1.10.2.min.js"></script>

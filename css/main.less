@@ -2,7 +2,7 @@
     FONTS
 ========================================================================== */
 
-@import url(http://fonts.googleapis.com/css?family=Noto+Sans&subset=latin,cyrillic-ext);
+@import url(http://fonts.googleapis.com/css?family=Noto+Sans:700,400&subset=latin,cyrillic-ext);
 
 /* ==========================================================================
     LESS
@@ -189,18 +189,155 @@ a:hover {
     margin: 0 260px;
 }
 
+.centered {
+    text-align: center;
+    margin: 0 auto;
+}
+
+.no-mg {
+    margin: 0 !important;
+}
+
+.mb-15 {
+    margin-bottom: 15px;
+}
+
+.mb-20 {
+    margin-bottom: 20px;
+}
+
+.mb-25 {
+    margin-bottom: 25px;
+}
+
+.block-white {
+    background-color: @white;
+}
+
+.block-shadowed {
+    .box-shadow(0 1px 1px rgba(0, 1, 1, .15));
+}
+
+/* ==========================================================================
+    Text and titles
+========================================================================== */
+
 .text-white {
    color: @white;
+}
+
+.text-shadowed {
+    text-shadow: 0 1px 2px rgba(9, 29, 31, .26);
 }
 
 .title {
     font-family: 'Noto Sans', 'Open Sans', Helvetica, Arial, sans-serif;
     text-transform: uppercase;
+    font-weight: normal;
 }
 
 .title-giant {
     font-size: 40px;
     font-weight: bold;
+}
+
+.title-bg {
+    .inline-block;
+    padding: 6px 12px;
+    background: @black;
+    background: rgba(0, 0, 0, .65);
+}
+
+/* ==========================================================================
+    Buttons
+========================================================================== */
+
+.btn {
+    .inline-block;
+    .title;
+    .border-radius(3px);
+    padding: 12px 24px;
+    color: @white;
+    font-size: 14px;
+    border-width: 0;
+    border-bottom-width: 2px;
+    border-style: solid;
+}
+
+.btn-pink {
+    background-color: darken(@mandy, 5%);
+    border-color: #a9354a;
+}
+
+.btn-wide {
+    padding: 12px 28px;
+}
+
+/* ==========================================================================
+   Icons
+========================================================================== */
+
+.icon {
+    .inline-block;
+    background: url(../img/icons-sprite.png);
+}
+
+.icon-fb,
+.icon-tw,
+.icon-insta {
+    width: 26px;
+    height: 26px;
+    .transition(all ease .1s);
+}
+
+.icon-fb {
+    background-position: 0 0;
+}
+
+.icon-fb:hover {
+    background-position: -26px 0;
+}
+
+.icon-tw {
+    background-position: 0 -27px;
+}
+
+.icon-tw:hover {
+    background-position: -26px -27px;
+}
+
+.icon-insta {
+    background-position: 0 -56px;
+}
+
+.icon-insta:hover {
+    background-position: -27px -56px;
+}
+
+
+/* ==========================================================================
+    SOCIALS-FIXED
+========================================================================== */
+
+.socials-fixed {
+    position: fixed;
+    top: 50%;
+    left: 0;
+    margin-top: -75px;
+    padding: 15px 13px;
+    background-color: @white;
+    .border-radiuses(3px, 3px, 0, 0);
+    .block-shadowed;
+
+    ul {        
+        li {
+            margin-top: 20px;
+        }
+
+        li:first-child {
+            margin-top: 0;
+        }
+    }
 }
 
 /* ==========================================================================
@@ -216,6 +353,12 @@ a:hover {
             color: #73767b;
             font-size: 12px;
             .title;
+            .transition(all .3s);
+
+            img {
+                vertical-align: sub;
+                margin-left: 10px;
+            }
         }
     }
 
@@ -244,6 +387,10 @@ a:hover {
 
     li:first-child {
         padding-right: 0;
+    }
+
+    li a {
+        color: @white;
     }
 
     a:hover {
@@ -281,8 +428,47 @@ a:hover {
 }
 
 .slider-info {
+    width: 666px;
     padding-top: 90px;
     .text-white;
+
+    h1, h3, p {
+        margin-bottom: 20px;
+    }
+
+    p {
+        line-height: 26px;
+        letter-spacing: 1px;
+    }
+}
+
+.bg-reticulum {
+    background: url(../img/bg-reticulum.jpg);
+}
+
+.push-up {
+    margin-top: -70px;
+}
+
+.col-1 {
+    float: left;
+    width: 446px;
+    margin-left: 30px;
+    font-size: 13px;
+}
+
+.title-col {
+    padding: 0 15px;
+    line-height: 30px;
+    font-size: 14px;
+    font-family: 'Noto Sans', 'Open Sans', Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    color: #292c34;
+    border-bottom: 3px solid @turquoise;
+}
+
+.col-content {
+    padding: 10px 15px 25px;
 }
 
 /* Main for no authorized user
