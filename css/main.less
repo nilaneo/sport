@@ -43,9 +43,9 @@
     border-bottom-left-radius:          @bottomleft;
     border-top-left-radius:             @topleft;
 
-    -moz-background-clip:    padding; 
-    -webkit-background-clip: padding-box; 
-    background-clip:         padding-box; 
+    -moz-background-clip:    padding;
+    -webkit-background-clip: padding-box;
+    background-clip:         padding-box;
 }
 
 .gradient (@startColor, @endColor) {
@@ -142,6 +142,10 @@ a {
 
 a:focus {
     outline: none;
+}
+
+img {
+    display: block;
 }
 
 .left {
@@ -294,7 +298,7 @@ a:focus {
 }
 
 .text-small {
-    font-size: 12px;    
+    font-size: 12px;
 }
 
 .text-high {
@@ -438,7 +442,7 @@ a:focus {
     .border-radiuses(3px, 3px, 0, 0);
     .block-shadowed;
 
-    ul {        
+    ul {
         li {
             margin-top: 20px;
         }
@@ -454,7 +458,7 @@ a:focus {
 ========================================================================== */
 
 .nav {
-    
+
     li {
         padding: 0 25px;
         a {
@@ -688,6 +692,56 @@ a:focus {
 .pre-footer {
     background-color: #1f2125;
     padding: 20px 0;
+
+    .col-sep {
+        background-color: #2b2d31;
+        border: none;
+    }
+}
+
+.tweet {
+    margin: 25px 0;
+}
+
+.img-tweet {
+    .border-radius(3px);
+}
+
+.bd-tweet {
+    color: #dadada;
+    font-size: 13px;
+    font-weight: bold;
+
+    a {
+        color: @java;
+        text-decoration: none;
+    }
+
+    .tweet-author {
+        color: #dadada;
+        font-size: 14px;
+        font-family: 'Noto Sans', 'Open Sans', Helvetica, Arial, sans-serif;
+    }
+
+    .tweet-date {
+        color: #adadad;
+        font-size: 12px;
+        font-weight: normal;
+    }
+}
+
+.list-gallery-small {
+    margin-top: 25px;
+    margin-left: -10px;
+
+    li {
+        float: left;
+        margin: 0 0 10px 10px;
+        a {
+            .inline-block;
+            border: 2px solid @white;
+        }
+    }
 }
 
 /* Main for no authorized user
@@ -700,5 +754,5 @@ a:focus {
 
 .footer {
     height: 70px;
-    background-color: #1a1c20;    
+    background-color: #1a1c20;
 }
